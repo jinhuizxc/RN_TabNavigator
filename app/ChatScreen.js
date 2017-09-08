@@ -12,6 +12,7 @@ export default class ChatScreen extends React.Component {
         const isInfo = state.params.mode === 'info';
         const {user} = state.params;
         return {
+            // 默认是后者
             title: isInfo ? `${user}'s Contact Info` : `Chat with ${state.params.user}`,
             headerRight: (
                 <Button
@@ -29,4 +30,4 @@ export default class ChatScreen extends React.Component {
             </View>
         );
     }
-}\
+}
